@@ -1,0 +1,12 @@
+#!/bin/sh
+# /etc/init.d/myExecutable
+
+echo "myExecutable esta comenzando"
+cd
+cd Documents/
+echo "I should have opened Documents "
+#python interface.py
+python showcameralive.py
+echo "Bin fertig"
+echo "Bin Perro"
+

@@ -1,0 +1,50 @@
+http://raspberrypiguide.de/howtos/raspberry-pi-camera-how-to/
+http://raspberrypiguide.de/howtos/raspberry-pi-camera-how-to/
+
+
+Usefull Instructions:
+
+Only make treaming
+
+>raspivid -o video.h264 -t 0
+
+to make video Record good Quality 5 Seconds
+>raspivid -o video.h264 -t 50000
+
+conver Video to mp4
+>MP4Box -fps 30 -add video.h264 video.mp4
+
+notice the name of the Example_Video is video.h264 
+
+motion is started at Reboot bacause of /etc/init.d/motion (ssh)
+it makes motion work on BootUp to the Console
+
+other Form:
+crete
+>sudo nano superscript 
+the go to
+>sudo nano .bashrc
+make excutable
+>sudo chmod 755 /etc/init.d/superscript
+register
+>sudo update-rc.d superscript defaults
+
+then Add at the bottom
+>./superscript
+
+
+
+
+
+
+
+
+
+
+
+Motion_Web_SErver_Camera_Streaming
+>sudo service motion restart
+>sudo service motion start
+>sudo service motion stop
+
+I made it continuous by modifying stream.maxrate 100

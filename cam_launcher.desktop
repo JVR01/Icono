@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+[Desktop Entry]
+Name=ApplicationMio
+Version=1.0
+Comment=Launches application
+
+Exec=/home/pi/Documents/showcameralive.py
+
+Icon=/home/pi/Documents/icon.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Education
